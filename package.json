@@ -1,0 +1,24 @@
+{
+  "name": "moreutils.js",
+  "version": "0.0.1",
+  "description": "A simple package adding to JS",
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "npx eslint -c .eslintrc.json --fix src/",
+    "jsdoc": "npx jsdoc -r -c jsdoc.json",
+    "devdocs": "npx http-server ./docs"
+  },
+  "keywords": [
+    "Utilities"
+  ],
+  "author": "LightBlueGamer",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "http-server": "^13.0.2",
+    "jsdoc": "^3.6.7"
+  },
+  "dependencies": {
+    "clean-jsdoc-theme": "^3.2.8"
+  }
+}
