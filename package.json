@@ -1,12 +1,13 @@
 {
   "name": "moreutils.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple package adding to JS",
   "main": "src/index.js",
   "scripts": {
     "eslint": "npx eslint -c .eslintrc.json --fix src/",
     "jsdoc": "npx jsdoc -c jsdoc.json",
-    "devdocs": "npx http-server ./docs"
+    "devdocs": "npx http-server ./docs",
+    "test": "node test/index.js"
   },
   "keywords": [
     "Utilities"

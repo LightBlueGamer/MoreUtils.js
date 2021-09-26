@@ -34,7 +34,7 @@
 
 
     <title>
-      objects/empty.js
+      arrays/randomItem.js
     </title>
 
     <!--[if lt IE 9]>
@@ -101,7 +101,7 @@
     <div id="main" class="main-content">
       
       <h1 id='page-title' class="page-title">
-        objects/empty.js
+        arrays/randomItem.js
       </h1>
       
 
@@ -114,14 +114,14 @@
         <article>
             <pre class="prettyprint source linenums"><code>/**
  * @function
- * @name empty
- * @arg {Object} - The object of which to check if it's empty
- * @returns {boolean} Returns true if the object is empty
- * @throws {TypeError} Will throw a type error if input was not of type Object 
+ * @name randomItem
+ * @arg {Array} - The array to get a random item from
+ * @returns {*} Returns a random item from a array
+ * @throws {TypeError} Will throw a type error if input was not of type Array 
  */
-module.exports = function empty(x) {
-  if (Boolean(x) &amp;&amp; x.constructor === Object) return Object.keys(x).length &lt;= 0;
-  else throw new TypeError(`The type '${typeof x}' is not of type object.`);
+module.exports = function randomItem(arr) {
+  if(!Array.isArray(arr)) throw new TypeError(`The type '${typeof arr}' is not of type array.`);
+  return arr[Math.floor(Math.random()*arr.length)];
 };
 </code></pre>
         </article>

@@ -86,7 +86,7 @@
   <body>
 
     <nav class="navbar" id="navbar">
-      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">MoreUtils.js</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="6729450" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#empty">empty</a></li><li class="accordion-list" id=""><a href="global.html#randomNumber">randomNumber</a></li></ul> </div></div>
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">MoreUtils.js</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="9850745" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion-list" id=""><a href="global.html#empty">empty</a></li><li class="accordion-list" id=""><a href="global.html#randomItem">randomItem</a></li><li class="accordion-list" id=""><a href="global.html#randomNumber">randomNumber</a></li></ul> </div></div>
       
 
     </nav>
@@ -176,7 +176,7 @@ empty(filledObject); // Returns false
       <script src="scripts/search.js"></script>
       <script src="scripts/third-party/fuse.js"></script>
       <script>
-        var list = [{"title":"empty","link":"<a href=\"global.html#empty\">empty</a>"},{"title":"randomNumber","link":"<a href=\"global.html#randomNumber\">randomNumber</a>"}];
+        var list = [{"title":"empty","link":"<a href=\"global.html#empty\">empty</a>"},{"title":"randomItem","link":"<a href=\"global.html#randomItem\">randomItem</a>"},{"title":"randomNumber","link":"<a href=\"global.html#randomNumber\">randomNumber</a>"}];
         var options = 
           setupSearch(list, options)
       </script>
@@ -190,7 +190,7 @@ empty(filledObject); // Returns false
 
     
     <script type="text/javascript">
-    var option = JSON.parse('{"options":{}}')
+    var option = JSON.parse('{}')
       console.log(option)
       document.addEventListener("DOMContentLoaded", function () {
         OverlayScrollbars(document.querySelectorAll('body'), option.option || {});
