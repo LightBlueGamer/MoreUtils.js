@@ -33,3 +33,6 @@ const filledObject = {
 empty(emptyObject); // Returns true
 empty(filledObject); // Returns false
 ```
+
+## Links
+* [Documentation](https://lightbluegamer.github.io/MoreUtils.js/global.html)

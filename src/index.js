@@ -1,3 +1,4 @@
 module.exports = {
-  empty: require("./objects/empty")
+  empty: require("./objects/empty"),
+  randomNumber: require("./others/randomNumber")
 };

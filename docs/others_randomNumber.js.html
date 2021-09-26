@@ -34,7 +34,7 @@
 
 
     <title>
-      Home
+      others/randomNumber.js
     </title>
 
     <!--[if lt IE 9]>
@@ -100,60 +100,34 @@
 
     <div id="main" class="main-content">
       
+      <h1 id='page-title' class="page-title">
+        others/randomNumber.js
+      </h1>
+      
 
       
 
 
 
     
-
-
-
-
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><h2>About</h2>
-<p>MoreUtils.js is a simple package aimed to add more functionality to JavaScript that can be useful to have at hand.</p>
-<h2>Installation</h2>
-<pre class="prettyprint source lang-sh-session"><code>npm i moreutils.js
-</code></pre>
-<h2>Example usage</h2>
-<pre class="prettyprint source lang-js"><code>// Without destructuring
-const moreutils = require('moreutils.js');
-
-const emptyObject = {};
-const filledObject = {
-  string: &quot;This is a string&quot;;
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @function
+ * @name randomNumber
+ * @arg {Number} Min - The minimum amount to return
+ * @arg {Number} Max - The maximum amount to return
+ * @returns {Number} Returns a random number between min and max
+ * @throws {TypeError} Will throw a type error if either parameter was not of type Number 
+ */
+module.exports = function randomNumber(min, max) {
+  if(typeof min !== "number") throw new TypeError(`The type '${typeof min}' is not of type number.`);
+  if(typeof max !== "number") throw new TypeError(`The type '${typeof max}' is not of type number.`);
+  return Math.floor(Math.random() * (max - min) + min);
 };
-
-moreutils.empty(emptyObject); // Returns true
-moreutils.empty(filledObject); // Returns false
-
-// With destructuring
-const { empty } = require('moreutils.js');
-
-const emptyObject = {};
-const filledObject = {
-  string: &quot;This is a string&quot;;
-};
-
-empty(emptyObject); // Returns true
-empty(filledObject); // Returns false
 </code></pre>
-<h2>Links</h2>
-<ul>
-<li><a href="https://lightbluegamer.github.io/MoreUtils.js/global.html">Documentation</a></li>
-</ul></article>
+        </article>
     </section>
-
-
 
 
 
