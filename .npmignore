@@ -1,0 +1,5 @@
+test/
+docs/
+.eslintrc.json
+jsdoc.json
+.gitignore
