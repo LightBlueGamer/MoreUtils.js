@@ -1,6 +1,6 @@
 {
   "name": "moreutils.js",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "A simple package adding to JS",
   "main": "src/index.js",
   "scripts": {
